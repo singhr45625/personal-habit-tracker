@@ -1,0 +1,58 @@
+import { HintContent } from '../types';
+
+export const APP_HINTS: HintContent[] = [
+  {
+    id: 'kpi-cards',
+    elementKey: 'kpi-cards',
+    title: 'Top KPI Momentum Cards',
+    icon: '📊',
+    whatItDoes: 'Provides an instant high-level overview of your daily productivity, active streaks, overall monthly consistency, and gamified level.',
+    howItCalculates: '• Daily Done: (Completed Today / Total Active Habits) × 100\n• Longest Streak (🔥): Max consecutive completed days ending today or yesterday (so an unfinished today does not break your streak)\n• Monthly Consistency: Total check-ins done in month / (Habits × Days in Month) × 100\n• XP & Level: +10 XP per checked habit. Levels scale progressively starting at Lvl 1 Beginner (0 XP).',
+    proTip: 'Click on any KPI card (or the Badges button) to open your Gamification & Milestone Badges journey modal!',
+  },
+  {
+    id: 'add-habit',
+    elementKey: 'add-habit',
+    title: '+ Add Habit & Custom Setup',
+    icon: '✨',
+    whatItDoes: 'Lets you define up to 99 customized daily habits with rich icons, custom categories, and realistic monthly targets.',
+    howItCalculates: 'When creating a habit, set: \n1. Name: Clear, actionable title (e.g., Drink 2L Water)\n2. Emoji: Visual anchor for the spreadsheet grid\n3. Category: Fitness, Health, Study, Coding, or your own custom tag\n4. Target Days: Goal number of days per month (e.g., 20 or 25 days).',
+    proTip: 'Start with 2–3 micro-habits on your first week to build confidence before scaling to 10+ habits.',
+  },
+  {
+    id: 'calendar-cells',
+    elementKey: 'calendar-cells',
+    title: 'Interactive Spreadsheet Checkboxes',
+    icon: '✅',
+    whatItDoes: 'Click any cell in the 1-to-31 calendar grid to log or toggle habit completion for that specific date.',
+    howItCalculates: 'One click triggers a crisp pop animation, turns the cell vibrant emerald green with a checkmark, plays audio feedback, awards +10 XP, advances your active streak, updates daily averages, and instantly persists to localStorage.',
+    proTip: 'Today’s column is highlighted in soft emerald with a pulsing indicator dot. You can also backfill missed days or uncheck anytime.',
+  },
+  {
+    id: 'category-search',
+    elementKey: 'category-search',
+    title: 'Category Filter Pills & Search',
+    icon: '🔍',
+    whatItDoes: 'Filter your tracking workspace by domain (e.g., Fitness, Coding, Health) or search habits by name.',
+    howItCalculates: 'Dynamically filters visible rows in real time without modifying or losing any historical completion data. Summary rows update dynamically to reflect the visible habits.',
+    proTip: 'Use categories to group routines into morning vs. evening blocks or study vs. physical fitness goals.',
+  },
+  {
+    id: 'daily-summary',
+    elementKey: 'daily-summary',
+    title: 'Daily Total (COUNTIF) Summary Row',
+    icon: '🧮',
+    whatItDoes: 'Spreadsheet-inspired automated COUNTIF row at the bottom of the grid showing day-by-day aggregate performance.',
+    howItCalculates: 'Formula: COUNTIF(Completed) / Total Active Habits. Displays exact completion fraction, percentage, and heat-coded mini visual bars (≥80% dark emerald, 50–79% emerald, <50% amber).',
+    proTip: 'Hover over any day’s summary cell to see a quick tooltip breakdown of how many habits were accomplished on that date.',
+  },
+  {
+    id: 'badges-backup',
+    elementKey: 'badges-backup',
+    title: 'Badges & Data Portability Toolbar',
+    icon: '💾',
+    whatItDoes: 'Access milestone achievements, export real Excel/CSV spreadsheets, download full JSON backups, and restore or reset data.',
+    howItCalculates: '• Export CSV: Formatted with UTF-8 BOM (\uFEFF) so Microsoft Excel and Google Sheets open it directly with emojis and formulas.\n• JSON Backup: Complete portable snapshot of your habits, logs, and settings.\n• Reset All Data: Wipes localStorage clean back to a zero-slate beginner state.',
+    proTip: 'Export a JSON backup periodically so your personal progress is always safe and portable across browsers.',
+  },
+];
