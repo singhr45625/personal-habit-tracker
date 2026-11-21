@@ -36,7 +36,32 @@ A complete, functional, personal **Gamified Habit Tracker Web Application** insp
 
 ---
 
-## 🚀 Running the App Locally
+## 🚀 Deploy to Vercel (1-Click Ready)
+
+This repository includes a pre-configured `vercel.json` optimized for Vite SPAs with client-side routing.
+
+### Method 1: Via Vercel Web Dashboard (Recommended)
+1. Push your code to GitHub, GitLab, or Bitbucket.
+2. Go to [vercel.com/new](https://vercel.com/new).
+3. Import your repository.
+4. Vercel automatically detects the project settings:
+   - **Framework Preset**: `Vite`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+5. Click **Deploy**. Your app is live with SSL, global CDN, and automatic continuous deployments!
+
+### Method 2: Via Vercel CLI
+```bash
+# Deploy to preview
+npx vercel
+
+# Deploy directly to production
+npx vercel --prod
+```
+
+---
+
+## 💻 Running Locally
 
 ```bash
 # 1. Install dependencies

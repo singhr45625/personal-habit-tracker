@@ -9,6 +9,10 @@ dist-ssr/
 build/
 out/
 
+# Vercel Deployment & Cache
+.vercel/
+.vercel
+
 # Local Environment Variables
 .env
 .env.local
